@@ -25,7 +25,20 @@ main{min-width:0}.hero{padding:34px clamp(25px,5vw,72px) 30px;background:radial-
 .content-layout{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:38px;padding:30px clamp(25px,5vw,72px) 70px}.article{min-width:0}.article h2{font-size:23px;letter-spacing:-.4px;margin:3px 0 12px}.article h3{font-size:18px;margin:27px 0 10px}.article p{color:#cbd2de;margin:9px 0 13px}.article .rule{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:26px}.notice{display:flex;gap:13px;background:#29251f;border:1px solid #69542b;border-left:4px solid #f0b43d;padding:14px 16px;border-radius:9px;margin:22px 0 32px}.notice strong{color:#ffd06d;display:block}.notice p{font-size:13px;margin:3px 0 0}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:17px}.category-card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:15px;display:flex;gap:12px;align-items:flex-start}.category-card .symbol{background:#293957;color:#83aaff;border-radius:8px;padding:7px 10px}.category-card strong{display:block;font-size:13px}.category-card small{color:var(--muted);font-size:11px}.toc{align-self:start;position:sticky;top:88px;background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:14px}.toc-title{font-size:11px;font-weight:800;letter-spacing:1px;color:#aeb8ca;margin:2px 7px 10px}.toc a{display:block;padding:6px 9px;border-radius:6px;font-size:12px;color:#bac4d5}.toc a:hover{background:#293248;color:#83aaff}.schedule{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}.schedule-card{border:1px solid var(--line);background:var(--panel);border-radius:11px;padding:19px}.schedule-card .day{color:#aebbd1;font-size:13px}.schedule-card .hours{font-size:25px;font-weight:800;margin-top:5px;color:#fff}.schedule-card .badge{display:inline-block;background:#2c3b32;color:#9de0b1;padding:3px 8px;border-radius:99px;font-size:10px;margin-top:10px}.footer{border-top:1px solid var(--line);padding:25px clamp(25px,5vw,72px);color:#8e99ad;font-size:12px}
 @media(max-width:1000px){.content-layout{grid-template-columns:minmax(0,1fr)}.toc{position:static;grid-row:1}.toc a{display:inline-block}.brand{min-width:auto}.toplinks>a:first-child{display:none}}
 @media(max-width:700px){.topbar{padding:0 12px;gap:12px}.brand small,.toplinks>a:first-child{display:none}.brand{font-size:13px}.search{max-width:none}.discord{padding:9px;font-size:12px}.layout{grid-template-columns:1fr}.sidebar{position:static;height:auto;padding:12px;gap:12px;border-right:0;border-bottom:1px solid var(--line)}.server{padding:9px}.nav{grid-template-columns:repeat(2,minmax(0,1fr))}.nav-label{margin:0}.community{display:none}.hero{padding:24px 20px}.crumb{margin-bottom:28px}.content-layout{padding:23px 20px 45px}.cards,.schedule{grid-template-columns:1fr}.meta{gap:10px}}
-</style>
+.server-logo {
+     width: 20px;
+     height: 20px;
+     min-width: 20px;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden; }
+     .server-logo img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          display: block;
+     }
 </head>
 <body>
 <!-- PERSONNALISATION DES LOGOS :
@@ -42,7 +55,15 @@ main{min-width:0}.hero{padding:34px clamp(25px,5vw,72px) 30px;background:radial-
 </header>
 <div class="layout">
 <aside class="sidebar">
-  <div class="server"><span>⚔</span> ASGARD ROLEPLAY <span style="margin-left:auto;color:#9aa7bc">⌄</span></div>
+  <div class="server">
+       <span class="server-logo">
+            <img src="logo.png" alt="Logo Asgard RP">
+       </span>
+       <div>
+            <strong>ASGARD ROLEPLAY</strong>
+       </div>
+  </div>
+</span> ASGARD ROLEPLAY <span style="margin-left:auto;color:#9aa7bc">⌄</span></div>
   <div class="nav-label">GÉNÉRAL</div>
   <nav class="nav">
     <a class="active" href="#accueil"><span class="nav-icon">⌂</span>Accueil du règlement</a>
@@ -63,7 +84,7 @@ main{min-width:0}.hero{padding:34px clamp(25px,5vw,72px) 30px;background:radial-
          </div>
          <h1>Règlement illégal</h1></div>
     <p class="subtitle">Le règlement des activités illégales d’Asgard RP.</p>
-    <div class="meta"><span>▦ Dernière mise à jour : à compléter</span><span>◷ Temps de lecture : 5 min</span><span>◇ Asgard RP</span></div>
+    <div class="meta"><span>▦ Dernière mise à jour : 30/09/2026</span><span>◷ Temps de lecture : 5 min</span><span>◇ Asgard RP</span></div>
   </section>
   <div class="content-layout">
     <article class="article" id="article">
