@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#17191f">
+<meta name="description" content="Règlement illégal officiel d'Asgard RP.">
+<title>Règlement illégal — Asgard RP</title>
+<style>
+:root{color-scheme:dark;--bg:#17191f;--top:#20232b;--side:#1c1f26;--panel:#242832;--panel2:#20242d;--text:#f2f3f5;--muted:#a5aab5;--dim:#777f8e;--line:#343944;--blue:#4d86ff;--blue-soft:#263653;--max:1500px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.7 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}button,input{font:inherit}
+.topbar{height:62px;position:sticky;top:0;z-index:10;background:rgba(32,35,43,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:18px;padding:0 26px}
+.brand{display:flex;align-items:center;gap:11px;min-width:275px;font-weight:750;letter-spacing:-.02em}.brand-mark{height:32px;width:32px;border-radius:9px;background:linear-gradient(145deg,#6da0ff,#4058e8);display:grid;place-items:center;font-size:18px;font-weight:900;color:white;box-shadow:0 5px 18px #3458b544}.brand small{display:block;color:var(--muted);font-size:11px;font-weight:500;letter-spacing:0;margin-top:-3px}
+.search-wrap{position:relative;max-width:410px;flex:1}.search-wrap span{position:absolute;left:13px;top:7px;color:var(--dim);font-size:18px}.search{width:100%;height:39px;border:1px solid #393e49;background:#191b21;border-radius:10px;padding:0 14px 0 40px;color:var(--text);outline:none}.search:focus{border-color:var(--blue);box-shadow:0 0 0 3px #4d86ff22}.top-spacer{flex:1}.top-link{font-size:13px;color:var(--muted);padding:8px 12px;border-radius:8px}.top-link:hover{background:var(--panel);color:var(--text)}.discord{background:#4e63ed;color:white;font-weight:650;padding:9px 15px;border-radius:9px;font-size:13px}
+.shell{display:grid;grid-template-columns:286px minmax(0,1fr);max-width:1800px;margin:auto;min-height:calc(100vh - 62px)}.sidebar{background:var(--side);border-right:1px solid var(--line);position:sticky;top:62px;height:calc(100vh - 62px);overflow:auto;padding:25px 16px 18px;display:flex;flex-direction:column}.server-select{width:100%;border:1px solid #3b404b;border-radius:9px;background:#22252d;color:var(--text);padding:10px 12px;text-align:left;font-weight:700;margin-bottom:24px}.nav-label{color:#858c9b;font-size:10px;letter-spacing:.12em;font-weight:800;padding:0 12px;margin:0 0 8px}.nav{display:flex;flex-direction:column;gap:3px}.nav a{display:flex;align-items:center;gap:11px;color:#b8bdc8;font-size:13px;padding:9px 12px;border-radius:8px;border:1px solid transparent}.nav a .ico{width:18px;text-align:center;font-size:15px;color:#929db2}.nav a:hover{background:#262a34;color:white}.nav a.active{background:var(--blue-soft);border-color:#2c4266;color:#83aaff;font-weight:700}.nav a.active .ico{color:#83aaff}.sidebar-bottom{margin-top:auto;padding-top:25px}.community{background:linear-gradient(145deg,#252a39,#222630);border:1px solid #343b4d;border-radius:12px;padding:15px}.community strong{font-size:13px}.community p{color:var(--muted);font-size:11px;line-height:1.5;margin:4px 0 13px}.community a{display:block;text-align:center;border-radius:8px;padding:8px;background:#4e63ed;color:white;font-size:12px;font-weight:700}
+.main-area{min-width:0}.page-hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 85% 0%,#273b64 0%,transparent 35%),linear-gradient(120deg,#202734,#191c24 70%);padding:35px clamp(25px,5vw,72px) 30px}.hero-glow{position:absolute;right:-80px;top:-160px;width:460px;height:360px;border-radius:50%;background:#3c65b51c;filter:blur(20px);pointer-events:none}.crumbs{font-size:12px;color:#9299a8;margin-bottom:22px;position:relative}.crumbs span{margin:0 8px;color:#5f6878}.hero-title-row{display:flex;align-items:center;gap:16px;position:relative}.title-icon{height:48px;width:48px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(145deg,#5d8fff,#4547dc);font-size:25px;box-shadow:0 8px 24px #334cc344}.hero h1{font-size:clamp(30px,3vw,43px);letter-spacing:-.045em;line-height:1.15;margin:0;font-weight:800}.hero-sub{color:#b2b8c4;margin:12px 0 20px;font-size:16px;position:relative}.meta{display:flex;flex-wrap:wrap;gap:20px;color:#9299a8;font-size:12px;position:relative}.meta span{display:flex;align-items:center;gap:7px}
+.content-grid{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:38px;padding:30px clamp(25px,5vw,72px) 70px}.article{min-width:0;max-width:920px}.intro h2{font-size:23px;letter-spacing:-.025em;margin:0 0 9px}.intro p{margin:7px 0;color:#c2c6cf}.callout{display:flex;gap:13px;padding:14px 16px;border:1px solid #70552a;border-left:3px solid #f0a63a;background:#29251f;border-radius:9px;margin:22px 0 30px}.callout-icon{font-size:20px}.callout strong{color:#ffbd59;display:block;margin-bottom:2px}.callout p{color:#c6bba9;font-size:13px;margin:0}
+.categories-heading{font-size:23px;letter-spacing:-.025em;margin:30px 0 14px}.category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:36px}.category{display:flex;align-items:flex-start;gap:12px;text-align:left;padding:15px 14px;border:1px solid #303746;background:linear-gradient(145deg,#222936,#1e232c);border-radius:10px;min-height:94px;transition:transform .15s,border-color .15s}.category:hover{transform:translateY(-2px);border-color:#4a6aa5}.cat-icon{flex:0 0 34px;width:34px;height:34px;border-radius:9px;display:grid;place-items:center;background:#2e3d60;color:#8db0ff;font-size:17px}.category strong{font-size:12px;display:block;margin:0 0 4px}.category small{display:block;color:#9da5b4;font-size:11px;line-height:1.45}.section{padding:24px 0 22px;border-top:1px solid var(--line);scroll-margin-top:85px}.section h2{display:flex;align-items:center;gap:11px;font-size:24px;letter-spacing:-.03em;margin:0 0 15px}.section h2 .n{color:#7da5ff;font-size:13px;font-weight:800;letter-spacing:0}.rule{margin:0 0 13px;color:#c6cad2}.rule b{color:#f1f3f7}.rule-num{color:#8eb0ff;font-weight:750;margin-right:5px}.section ul{padding-left:23px;color:#c6cad2}.section li{margin:7px 0}.right-toc{position:sticky;top:91px;align-self:start;border:1px solid #303642;background:#1d2129;border-radius:11px;padding:16px 13px}.right-toc h3{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#9da4b2;margin:0 0 10px;padding:0 8px}.right-toc a{display:block;padding:6px 8px;color:#aeb4c0;font-size:12px;border-radius:6px;border-left:2px solid transparent}.right-toc a:hover,.right-toc a.active{background:#252d3c;color:#82aaff;border-left-color:#5d8fff}.footer{border-top:1px solid var(--line);padding:20px 0;color:#737c8b;font-size:11px;margin-top:22px}.empty{display:none;padding:20px;border:1px dashed var(--line);border-radius:9px;color:var(--muted)}
+@media(max-width:1100px){.shell{grid-template-columns:240px minmax(0,1fr)}.content-grid{grid-template-columns:minmax(0,1fr)}.right-toc{display:none}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.brand{min-width:220px}}
+@media(max-width:700px){.topbar{padding:0 13px;gap:10px}.brand{min-width:0;flex:1}.brand small,.top-link{display:none}.search-wrap{max-width:180px}.discord{display:none}.shell{display:block}.sidebar{position:static;height:auto;padding:12px;border-right:0;border-bottom:1px solid var(--line)}.server-select{margin-bottom:10px;padding:8px}.nav-label{display:none}.nav{flex-direction:row;overflow-x:auto;padding-bottom:3px}.nav a{white-space:nowrap;padding:8px 10px}.nav a:not(.active){display:none}.sidebar-bottom{display:none}.page-hero{padding:25px 20px}.content-grid{padding:24px 20px 50px}.category-grid{grid-template-columns:1fr}.hero-title-row{gap:12px}.title-icon{width:42px;height:42px}.hero h1{font-size:30px}.hero-sub{font-size:14px}.meta{gap:10px}.section h2{font-size:21px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#top"><span class="brand-mark">A</span><span>Asgard RP<small>Wiki communautaire · Règlements</small></span></a>
+  <div class="search-wrap"><span>⌕</span><input id="search" class="search" type="search" placeholder="Rechercher une règle…  (Ctrl K)" aria-label="Rechercher une règle"></div>
+  <div class="top-spacer"></div><a class="top-link" href="#regles">Documentation</a><a class="discord" href="#communaute">Discord ↗</a>
+</header>
+<div class="shell" id="top">
+<aside class="sidebar">
+  <div class="server-select">⚔　ASGARD ROLEPLAY　⌄</div>
+  <div class="nav-label">GÉNÉRAL</div>
+  <nav class="nav" id="sideNav">
+    <a href="#introduction"><span class="ico">⌂</span>Accueil du règlement</a>
+    <a href="#loot" class="active"><span class="ico">▣</span>Règlement illégal</a>
+    <a href="#organisations"><span class="ico">♟</span>Organisations illégales</a>
+    <a href="#braquages"><span class="ico">⚑</span>Braquages</a>
+    <a href="#independants"><span class="ico">♙</span>Joueurs indépendants</a>
+  </nav>
+  <div class="sidebar-bottom" id="communaute"><div class="community"><strong>Rejoins la communauté</strong><p>Retrouve les annonces, les nouveautés et les informations d’Asgard RP sur notre Discord.</p><a href="#" onclick="return false">Lien Discord à ajouter ↗</a></div></div>
+</aside>
+<main class="main-area">
+  <section class="page-hero" id="introduction"><div class="hero-glow"></div>
+    <div class="crumbs">Général <span>›</span> Règlement du serveur <span>›</span> <b>Règlement illégal</b></div>
+    <div class="hero-title-row"><div class="title-icon">☠</div><div><h1>Règlement illégal</h1></div></div>
+    <p class="hero-sub">Le règlement des activités illégales d’Asgard RP.</p>
+    <div class="meta"><span>▦ Dernière mise à jour : à compléter</span><span>◷ Temps de lecture : 5 min</span><span>◈ Asgard RP</span></div>
+  </section>
+  <div class="content-grid">
+    <article class="article" id="regles">
+      <section class="intro searchable">
+        <h2>Introduction</h2>
+        <p>Ce règlement encadre les interactions criminelles, les braquages, les organisations illégales et les activités associées sur Asgard RP.</p>
+        <p>Chaque scène doit rester cohérente, immersive et agréable pour l’ensemble des joueurs. Le fair-play et la qualité du roleplay passent avant la recherche de victoire.</p>
+        <div class="callout"><div class="callout-icon">⚠</div><div><strong>Important</strong><p>Tout joueur participant à une scène illégale doit connaître et respecter le règlement. En cas de doute, contactez le staff avant d’engager l’action.</p></div></div>
+      </section>
+      <h2 class="categories-heading">Catégories</h2>
+      <div class="category-grid">
+        <a class="category" href="#loot"><span class="cat-icon">▣</span><span><strong>Loot</strong><small>Fouille, récupération et limites de butin.</small></span></a>
+        <a class="category" href="#vol"><span class="cat-icon">♢</span><span><strong>Vol et arnaque</strong><small>Règles sur les vols et les escroqueries RP.</small></span></a>
+        <a class="category" href="#otages"><span class="cat-icon">♟</span><span><strong>Prises d’otages</strong><small>Motifs RP et négociations.</small></span></a>
+        <a class="category" href="#points-chauds"><span class="cat-icon">⚠</span><span><strong>Points chauds</strong><small>Zones sensibles et situations à risque.</small></span></a>
+        <a class="category" href="#laboratoires"><span class="cat-icon">⚗</span><span><strong>Laboratoires</strong><small>Conditions liées aux activités illégales.</small></span></a>
+        <a class="category" href="#territoires"><span class="cat-icon">⌖</span><span><strong>Territoires et QG</strong><small>Règles de territoire et de quartier général.</small></span></a>
+        <a class="category" href="#braquages"><span class="cat-icon">⚑</span><span><strong>Braquages</strong><small>Conditions générales des braquages.</small></span></a>
+        <a class="category" href="#organisations"><span class="cat-icon">♟</span><span><strong>Organisations illégales</strong><small>Groupes, alliances et membres.</small></span></a>
+        <a class="category" href="#independants"><span class="cat-icon">♙</span><span><strong>Indépendants</strong><small>Règles pour les joueurs sans organisation.</small></span></a>
+      </div>
+      <div id="empty" class="empty">Aucune règle ne correspond à votre recherche.</div>
+      <section class="section searchable" id="loot"><h2><span class="n">01</span> Loot</h2>
+        <p class="rule"><span class="rule-num">1.1</span> Le montant pris sur un joueur doit rester raisonnable et cohérent avec la scène.</p>
+        <p class="rule"><span class="rule-num">1.2</span> Les sacs, kevlar et armes ne peuvent pas être récupérés sans justification RP claire.</p>
+        <p class="rule"><span class="rule-num">1.3</span> Le vol de téléphone ou de carte d’identité doit être justifié par une raison RP cohérente.</p>
+        <p class="rule"><span class="rule-num">1.4</span> Le vol intégral de ressources illégales est réservé aux membres d’une organisation autorisée, selon les règles du serveur.</p>
+        <p class="rule"><span class="rule-num">1.5</span> Le « free loot » est interdit.</p>
+      </section>
+      <section class="section searchable" id="vol"><h2><span class="n">02</span> Vol et arnaque</h2>
+        <p class="rule"><span class="rule-num">2.1</span> Toute arnaque doit s’inscrire dans une scène RP crédible et respecter les limites définies par le serveur.</p>
+        <p class="rule"><span class="rule-num">2.2</span> Il est interdit d’exploiter un bug, une faille ou une information obtenue hors RP pour voler un joueur.</p>
+        <p class="rule"><span class="rule-num">2.3</span> Les transactions doivent respecter les règles économiques et les limites annoncées par le staff.</p>
+      </section>
+      <section class="section searchable" id="otages"><h2><span class="n">03</span> Prise d’otage</h2>
+        <p class="rule"><span class="rule-num">3.1</span> Une prise d’otage doit disposer d’un motif RP identifiable et cohérent.</p>
+        <p class="rule"><span class="rule-num">3.2</span> Les demandes de rançon doivent être proportionnées à la situation et respecter les limites du serveur.</p>
+        <p class="rule"><span class="rule-num">3.3</span> La vie de l’otage doit être prise en compte pendant toute la scène. Les négociations doivent rester jouables.</p>
+      </section>
+      <section class="section searchable" id="points-chauds"><h2><span class="n">04</span> Points chauds</h2>
+        <p class="rule"><span class="rule-num">4.1</span> Les points chauds sont des zones où les activités illégales peuvent entraîner des risques RP particuliers.</p>
+        <p class="rule"><span class="rule-num">4.2</span> Il est interdit de provoquer volontairement une scène sans motif RP dans le seul but de déclencher un affrontement.</p>
+        <p class="rule"><span class="rule-num">4.3</span> Les règles spécifiques aux zones doivent être respectées même en cas de conflit entre groupes.</p>
+      </section>
+      <section class="section searchable" id="laboratoires"><h2><span class="n">05</span> Laboratoires</h2>
+        <p class="rule"><span class="rule-num">5.1</span> Les activités de laboratoire doivent respecter les effectifs, délais et conditions définis par le serveur.</p>
+        <p class="rule"><span class="rule-num">5.2</span> Il est interdit de contourner une limite en faisant réaliser l’action par un autre joueur ou groupe.</p>
+        <p class="rule"><span class="rule-num">5.3</span> Toute contestation doit être traitée par le staff en dehors de la scène.</p>
+      </section>
+      <section class="section searchable" id="territoires"><h2><span class="n">06</span> Territoires et QG</h2>
+        <p class="rule"><span class="rule-num">6.1</span> Les conflits de territoire doivent être motivés par une histoire ou un enjeu RP cohérent.</p>
+        <p class="rule"><span class="rule-num">6.2</span> Un quartier général ne doit pas être utilisé pour éviter artificiellement les conséquences d’une scène en cours.</p>
+        <p class="rule"><span class="rule-num">6.3</span> Les règles de proximité et de protection autour des QG s’appliquent à tous les joueurs.</p>
+      </section>
+      <section class="section searchable" id="braquages"><h2><span class="n">07</span> Braquages</h2>
+        <p class="rule"><span class="rule-num">7.1</span> Chaque type de braquage doit respecter les conditions de lancement et les effectifs autorisés par le règlement officiel.</p>
+        <p class="rule"><span class="rule-num">7.2</span> Les braquages répétitifs sans mise en scène ni cohérence RP peuvent être sanctionnés.</p>
+        <p class="rule"><span class="rule-num">7.3</span> Les règles spécifiques aux commerces, banques et autres activités doivent être consultées avant le lancement.</p>
+      </section>
+      <section class="section searchable" id="organisations"><h2><span class="n">08</span> Organisations illégales</h2>
+        <p class="rule"><span class="rule-num">8.1</span> Toute organisation doit respecter les conditions de création, de recrutement et d’activité établies par le staff.</p>
+        <p class="rule"><span class="rule-num">8.2</span> Les alliances, trêves et conflits entre organisations doivent suivre les règles officielles du serveur.</p>
+        <p class="rule"><span class="rule-num">8.3</span> Les membres restent responsables du comportement de leur personnage et doivent respecter les décisions de l’équipe de modération.</p>
+      </section>
+      <section class="section searchable" id="divers"><h2><span class="n">09</span> Divers</h2>
+        <p class="rule"><span class="rule-num">9.1</span> Le méta-gaming, l’exploitation de bugs et toute utilisation d’informations hors RP sont interdits.</p>
+        <p class="rule"><span class="rule-num">9.2</span> Les conflits hors RP ne doivent pas être réglés en jeu. Utilisez les canaux prévus à cet effet.</p>
+        <p class="rule"><span class="rule-num">9.3</span> Le staff peut intervenir si une scène nuit au fair-play ou au bon déroulement du serveur.</p>
+      </section>
+      <section class="section searchable" id="independants"><h2><span class="n">10</span> Indépendants</h2>
+        <p class="rule"><span class="rule-num">10.1</span> Les joueurs indépendants sont soumis aux règles générales du règlement illégal.</p>
+        <p class="rule"><span class="rule-num">10.2</span> L’accès aux activités réservées aux organisations dépend des autorisations et conditions fixées par le serveur.</p>
+        <p class="rule"><span class="rule-num">10.3</span> Chaque joueur doit privilégier un roleplay cohérent, respecter les autres participants et jouer les conséquences de ses actes.</p>
+      </section>
+      <footer class="footer">Asgard RP · Règlement communautaire · Pensez à consulter les annonces officielles pour connaître les dernières modifications.</footer>
+    </article>
+    <aside class="right-toc"><h3>Sur cette page</h3>
+      <a href="#introduction">Introduction</a><a href="#loot" class="active">1. Loot</a><a href="#vol">2. Vol et arnaque</a><a href="#otages">3. Prise d’otage</a><a href="#points-chauds">4. Points chauds</a><a href="#laboratoires">5. Laboratoires</a><a href="#territoires">6. Territoires et QG</a><a href="#braquages">7. Braquages</a><a href="#organisations">8. Organisations illégales</a><a href="#divers">9. Divers</a><a href="#independants">10. Indépendants</a>
+    </aside>
+  </div>
+</main>
+</div>
+<script>
+const search=document.getElementById('search');
+const sections=[...document.querySelectorAll('.searchable')];
+const empty=document.getElementById('empty');
+search.addEventListener('input',()=>{
+ const q=search.value.trim().toLocaleLowerCase('fr');let count=0;
+ sections.forEach(s=>{const ok=s.textContent.toLocaleLowerCase('fr').includes(q);s.style.display=ok?'':'none';if(ok)count++});
+ document.querySelectorAll('.category').forEach(c=>{const target=document.querySelector(c.getAttribute('href'));c.style.display=!q||(target&&target.textContent.toLocaleLowerCase('fr').includes(q))?'':'none'});
+ document.querySelector('.categories-heading').style.display=q?'none':'';
+ document.querySelector('.category-grid').style.display=q?'none':'grid';
+ empty.style.display=count?'none':'block';
+});
+document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();search.focus()}if(e.key==='Escape'){search.value='';search.dispatchEvent(new Event('input'))}});
+const tocLinks=[...document.querySelectorAll('.right-toc a')];
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){tocLinks.forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id));document.querySelectorAll('#sideNav a').forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id||a.hash==='#organisations'&&e.target.id==='organisations'))}}),{rootMargin:'-18% 0px -68% 0px'});
+document.querySelectorAll('.section[id],#introduction').forEach(s=>observer.observe(s));
+</script>
+</body>
+</html>
